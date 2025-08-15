@@ -651,7 +651,7 @@ typedef struct
  /**
   * @brief Macro for configuring interrupt 1.
   */
-#define LIS2DH12_INTERNAL_INT1_CFG(_s, _thr, _dur, _aoi, _6d, _zh, _zl, _yh, yl, _xh, _xl, _lir)            \
+#define LIS2DH12_INTERNAL_INT1_CFG(_s, _thr, _dur, _aoi, _6d, _zh, _zl, _yh, _yl, _xh, _xl, _lir)            \
     NRF_TWI_SENSOR_REG_SET(_s.int1_ths, LIS2DH12_INT_THS_MASK,  LIS2DH12_INT_THS_POS,  _thr);      \
     NRF_TWI_SENSOR_REG_SET(_s.int1_dur, LIS2DH12_INT_DUR_MASK,  LIS2DH12_INT_DUR_POS,  _dur);      \
     NRF_TWI_SENSOR_REG_SET(_s.int1_cfg, LIS2DH12_INT_AOI_MASK,  LIS2DH12_INT_AOI_POS,  _aoi);      \
@@ -668,7 +668,7 @@ typedef struct
 /**
  * @brief Macro for configuring interrupt 2.
  */
-#define LIS2DH12_INTERNAL_INT2_CFG(_s, _thr, _dur, _aoi, _6d, _zh, _zl, _yh, yl, _xh, _xl, _lir)           \
+#define LIS2DH12_INTERNAL_INT2_CFG(_s, _thr, _dur, _aoi, _6d, _zh, _zl, _yh, _yl, _xh, _xl, _lir)           \
    NRF_TWI_SENSOR_REG_SET(_s.int2_ths, LIS2DH12_INT_THS_MASK,  LIS2DH12_INT_THS_POS,  _thr);      \
    NRF_TWI_SENSOR_REG_SET(_s.int2_dur, LIS2DH12_INT_DUR_MASK,  LIS2DH12_INT_DUR_POS,  _dur);      \
    NRF_TWI_SENSOR_REG_SET(_s.int2_cfg, LIS2DH12_INT_AOI_MASK,  LIS2DH12_INT_AOI_POS,  _aoi);      \
